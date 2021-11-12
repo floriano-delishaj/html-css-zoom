@@ -56,16 +56,28 @@
 nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     background-color: #333;
     color: white;
     height: 70px;
     width: 100%;
 }
 
+.nav-left, .nav-middle, .nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+}
+
+.i-green {
+    color: green;
+}
+
 .nav >.icon {
     text-align: center;
-    margin-left: 10px;
-    width: 100%;
+    margin: 0 15px 0 10px;
+    
 }
 
 .icon .icon-image {
@@ -73,9 +85,8 @@ nav {
     font-size: 24px;
 }
 
-.nav.nav-left {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 70px;
+.nav-right {
+    background-color: #555;
+    color: red;
+    padding: 0 20px 0 20px;
 }
